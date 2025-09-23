@@ -6,15 +6,11 @@
 }
 
 .featureIcon {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--ifm-color-primary);
-  background: var(--ifm-color-primary-lightest);
-  border-radius: 50px;
-  padding: 1rem 1.5rem;
-  margin: 0 auto 1rem;
-  display: inline-block;
-  border: 2px solid var(--ifm-color-primary);
+  height: 64px;
+  width: 64px;
+  margin: 0 auto 1.5rem;
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 .featureSvg {

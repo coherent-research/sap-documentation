@@ -13,7 +13,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'For All User Types',
-    Icon: 'Users',
+    Icon: '/img/icons/user.svg',
     description: (
       <>
         Whether you're a standard user, organization administrator, or system
@@ -23,7 +23,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Complete Device Management',
-    Icon: 'Device',
+    Icon: '/img/icons/tablet.svg',
     description: (
       <>
         Learn how to add, configure, and manage devices and gateways.
@@ -33,7 +33,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Step-by-Step Instructions',
-    Icon: 'Guide',
+    Icon: '/img/icons/globe.svg',
     description: (
       <>
         Clear, detailed instructions with screenshots and examples.
@@ -47,7 +47,7 @@ function Feature({title, Icon, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <div className={styles.featureIcon} role="img">{Icon}</div>
+        <img src={Icon} className={styles.featureIcon} role="img" alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
