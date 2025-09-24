@@ -42,11 +42,8 @@ const config: Config = {
   themeConfig: {
     image: 'img/sap-social-card.jpg',
     navbar: {
-      title: 'SAP User Guide',
-      logo: {
-        alt: 'SAP Logo',
-        src: 'img/logo.svg',
-      },
+      title: 'SAP',
+      hideOnScroll: false,
       items: [
         {
           type: 'docSidebar',
