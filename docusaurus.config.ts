@@ -11,7 +11,7 @@ const config: Config = {
   baseUrl: '/',
 
   organizationName: 'coherent-research',
-  projectName: 'sap-docusaurus',
+  projectName: 'sap-documentation',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -29,7 +29,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/',
           editUrl:
-            'https://github.com/coherent-research/sap-docusaurus/tree/main/',
+            'https://github.com/coherent-research/sap-documentation/tree/main/',
         },
         blog: false,
         theme: {
