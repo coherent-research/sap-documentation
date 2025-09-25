@@ -1,53 +1,53 @@
 :root {
   /* SAP Primary Colors (Blues) */
-  --ifm-color-primary: #003E6B;
+  --ifm-color-primary: #003e6b;
   --ifm-color-primary-dark: #003054;
-  --ifm-color-primary-darker: #002A47;
-  --ifm-color-primary-darkest: #001A2E;
-  --ifm-color-primary-light: #0A558C;
-  --ifm-color-primary-lighter: #0F609B;
-  --ifm-color-primary-lightest: #186FAF;
+  --ifm-color-primary-darker: #002a47;
+  --ifm-color-primary-darkest: #001a2e;
+  --ifm-color-primary-light: #0a558c;
+  --ifm-color-primary-lighter: #0f609b;
+  --ifm-color-primary-lightest: #186faf;
 
   /* SAP Neutral Colors */
-  --ifm-background-color: #F0F4F8;
-  --ifm-color-content: #102A43;
-  --ifm-color-content-secondary: #243B53;
-  --ifm-navbar-background-color: #003E6B;
-  --ifm-navbar-link-color: #F0F4F8;
-  --ifm-navbar-link-hover-color: #B6E0FE;
+  --ifm-background-color: #f0f4f8;
+  --ifm-color-content: #102a43;
+  --ifm-color-content-secondary: #243b53;
+  --ifm-navbar-background-color: #003e6b;
+  --ifm-navbar-link-color: #f0f4f8;
+  --ifm-navbar-link-hover-color: #b6e0fe;
 
   /* Custom SAP Colors */
-  --sap-blue-900: #003E6B;
-  --sap-blue-800: #0A558C;
-  --sap-blue-700: #0F609B;
-  --sap-blue-600: #186FAF;
-  --sap-blue-500: #2680C2;
-  --sap-blue-400: #4098D7;
-  --sap-blue-300: #62B0E8;
-  --sap-blue-200: #84C5F4;
-  --sap-blue-100: #B6E0FE;
-  --sap-blue-050: #DCEEFB;
+  --sap-blue-900: #003e6b;
+  --sap-blue-800: #0a558c;
+  --sap-blue-700: #0f609b;
+  --sap-blue-600: #186faf;
+  --sap-blue-500: #2680c2;
+  --sap-blue-400: #4098d7;
+  --sap-blue-300: #62b0e8;
+  --sap-blue-200: #84c5f4;
+  --sap-blue-100: #b6e0fe;
+  --sap-blue-050: #dceefb;
 
-  --sap-neutral-900: #102A43;
-  --sap-neutral-800: #243B53;
-  --sap-neutral-700: #334E68;
+  --sap-neutral-900: #102a43;
+  --sap-neutral-800: #243b53;
+  --sap-neutral-700: #334e68;
   --sap-neutral-600: #486581;
-  --sap-neutral-500: #627D98;
-  --sap-neutral-400: #829AB1;
-  --sap-neutral-300: #9FB3C8;
-  --sap-neutral-200: #BCCCDC;
-  --sap-neutral-100: #D9E2EC;
-  --sap-neutral-050: #F0F4F8;
+  --sap-neutral-500: #627d98;
+  --sap-neutral-400: #829ab1;
+  --sap-neutral-300: #9fb3c8;
+  --sap-neutral-200: #bcccdc;
+  --sap-neutral-100: #d9e2ec;
+  --sap-neutral-050: #f0f4f8;
 
-  --sap-red-500: #BA2525;
+  --sap-red-500: #ba2525;
   --sap-green-500: #15803d;
-  --sap-yellow-500: #F0B429;
+  --sap-yellow-500: #f0b429;
 
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #3b82f6;
   --ifm-color-primary-dark: #1d69f4;
   --ifm-color-primary-darker: #0e5ae8;
@@ -59,37 +59,45 @@
 }
 
 .hero {
-  background: linear-gradient(135deg, var(--sap-blue-900) 0%, var(--sap-blue-700) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--sap-blue-900) 0%,
+    var(--sap-blue-700) 100%
+  );
   color: var(--sap-neutral-050);
 }
 
 .navbar {
   border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.75rem;
 }
 
 /* Custom SAP Text Logo */
 .navbar__title {
   font-size: 2.5rem !important;
   font-weight: 900 !important;
-  color: #F0F4F8 !important;
+  color: #f0f4f8 !important;
   font-family: system-ui, -apple-system, sans-serif !important;
   letter-spacing: 0.1em !important;
   text-transform: uppercase !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: -0.5rem !important;
 }
 
-[data-theme='dark'] .navbar {
+[data-theme="dark"] .navbar {
   border-bottom-color: #374151;
 }
 
 .footer {
   background-color: var(--sap-neutral-100) !important;
-  color: #001A2E !important;
+  color: #001a2e !important;
   border-top: 1px solid var(--sap-neutral-200);
   font-weight: 500;
 }
 
 .footer * {
-  color: #001A2E !important;
+  color: #001a2e !important;
 }
 
 .footer a {
@@ -134,7 +142,7 @@
   border: 1px solid #d1d5db;
 }
 
-[data-theme='dark'] .markdown th {
+[data-theme="dark"] .markdown th {
   background-color: #374151;
   border-color: #4b5563;
 }
@@ -144,6 +152,6 @@
   border: 1px solid #d1d5db;
 }
 
-[data-theme='dark'] .markdown td {
+[data-theme="dark"] .markdown td {
   border-color: #4b5563;
 }
